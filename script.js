@@ -6,7 +6,7 @@ function updateClock(){
     const now = new Date();
     // console.log(now);
 
-    const hours = (now.getHours() % 12 || 12);
+    const hours = (now.getHours() % 12 || 12).toString().padStart(2, "0");
     // const minutes = now.getMinutes() < 10 ? `0${now.getMinutes()}` : now.getMinutes();
     // const seconds = now.getSeconds() < 10 ? `0${now.getSeconds()}` : now.getSeconds();
     const minutes = now.getMinutes().toString().padStart(2, "0");
